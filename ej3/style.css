@@ -1,0 +1,40 @@
+.row {
+    margin: 2rem auto;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+  }
+  
+  img {
+    position: absolute;
+  }
+  
+  .animable3 {
+    animation-name: cambiarImagen;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .animable2 {
+    animation-name: cambiarImagen;
+    animation-delay: 8s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  .animable1 {
+    animation-name: cambiarImagen;
+    animation-delay: 12s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes cambiarImagen {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
+  }
+  

@@ -1,0 +1,11 @@
+.row {
+    margin: 2rem auto;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+  }
+  
+  img {
+    position: absolute;
+  }
+  

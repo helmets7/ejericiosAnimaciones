@@ -1,0 +1,43 @@
+.row {
+    margin: 2rem auto;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+  }
+  
+  img {
+    position: absolute;
+  }
+  
+  .animable1 {
+    animation-name: zoomout;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+  }
+  
+  .animable2 {
+    animation-name: zoomin;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+  }
+  
+  @keyframes zoomin {
+    from {
+      transform: scale(0);
+    }
+  
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes zoomout {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(0);
+    }
+  }
+  

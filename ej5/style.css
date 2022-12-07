@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    overflow: hidden;
+}
+
+img{
+    position: absolute;
+}
+
+
+.bob{
+    animation-name: deladoalado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+.box:hover .puerta{
+    animation-name : volarsePuerta;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.box:hover .fuera{
+    animation-name : ampliarCasa;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes volarsePuerta {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+  
+    100% {
+        transform: translateX(-300px) rotate(100deg);
+    }
+}
+
+
+@keyframes ampliarCasa {
+  
+    100% {
+        transform: translate(10%, -215%) scale(6);
+       
+    }
+}
+
+
+@keyframes deladoalado{
+    0%   {left:100px;}
+    25%   {left:0px;}
+    50%   {left:100px;}
+    75%   {left:0px;}
+    100%   {left:100px;}
+}
